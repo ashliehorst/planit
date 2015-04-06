@@ -133,9 +133,9 @@ public class Event {
 //   String USER = "root";
 //   String PASS = "root";
    //FOR OPENSHIFT
-   String DB_URL = "jdbc:mysql://127.11.189.2:3306/";
-   String USER = "adminJINwHhB";
-   String PASS = "lrUe_5DxE1eK";
+   String DB_URL = "jdbc:mysql://127.4.54.130:3306/planit";
+   String USER = "admin";
+   String PASS = "B45xW6YzBwAf";
    Connection conn = null;
    Statement stmt = null;
    
@@ -196,7 +196,8 @@ public class Event {
    
    // Path on Ernesto's computer
    // OPENSHIFT
-         String dataDirectory = System.getenv("OPENSHIFT_DATA_DIR");
+        // String dataDirectory = System.getenv("OPENSHIFT_DATA_DIR");
+         String dataDirectory = System.getenv("mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/");
    //String fileName = "/Users/Yeah/Documents/NetBeansProjects/JavaComments/src/main/webapp/js/Events.js";
     // Path on Ashlie's computer
    // String fileName = "/Users/Ashlie/Documents/NetBeansProjects/PPP-master/src/main/webapp/js/Events.js";

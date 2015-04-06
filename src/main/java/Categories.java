@@ -40,8 +40,8 @@ public class Categories {
      //   prop = new Propert();
       // String file = prop.getTopicFile(); 
         // OPENSHIFT------------------------------------------------------
-            String dataDirectory = System.getenv("OPENSHIFT_DATA_DIR");
-        
+           // String dataDirectory = System.getenv("OPENSHIFT_DATA_DIR");
+        String dataDirectory = System.getenv("mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/");
         //String file = "/Users/Yeah/Documents/NetBeansProjects/JavaComments/src/main/java/categories.txt";
         //String file = "/Users/Ashlie/Documents/NetBeansProjects/newtestPlan-master/src/main/java/categories.txt";
         try {

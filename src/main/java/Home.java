@@ -52,8 +52,8 @@ public class Home extends HttpServlet {
    
    //FOR OPENSHIFT
    String DB_URL = "jdbc:mysql://127.11.189.2:3306/planit";
-   String USER = "adminJINwHhB";
-   String PASS = "lrUe_5DxE1eK";
+   String USER = "admin";
+   String PASS = "B45xW6YzBwAf";
    Connection conn = null;
    Statement stmt = null;
    try{
